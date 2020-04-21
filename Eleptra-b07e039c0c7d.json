@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "eleptra-rgxqtr",
+  "private_key_id": "b07e039c0c7d15ea54a8f690e251369540745ca6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDzAxuQpU5JD2wG\nES6ikWpy91zBSQbtxoWPQyIqd8x9+FMCnFmXhy558KzjloPqTmj9UfkgSx3t6awJ\nT+jBHYEa4STQBKGgqEtFyrvUNCk0oWJeCPYztP1hC/EkTFxvsei0XI+PY2tJspWJ\nZsTNQqH2zM8gBZ6Vsy05xpQxytXmgVe/F7fKtbynik1c/krLtj6DCJtX9CJjL1p+\nrCJAPA89nf/Ujd6sN+GhpEij1moCCuyag1OgIFe7kFzsUSYn2ugTbGteRYxlmdKH\na0JtuTpYttUwHXMCXSA1kqf/sXEE79mkDFNlThdMZbY8kI/RQE9Crit6O44GsxzP\nLnBRnMINAgMBAAECggEAYotQEkf2hwoJ9CvjjWkKkbRdmMPUW3e1kXLX2ADcm/in\nMNfWPOxEnI5Mjb3roIhLau5i6AWODXxEl0IgUK92O0AxfWljYZLdc1/S6yp7yyvm\nh9t6e11ZopEFKIMOuPycMQeX772RNEGHAkD6bYIny70iAQpGVM5j+JneXpKyStY+\nOHyuUeiv3WmwqqYglqecD6vDV16tADte6DZPlmaQWsrANfL+WsMaB3z2ZcKPql25\nAL2D6fzRB9hBX8jKYw+0mlQ81IMMYz19nVsdS1HL9LOJSNE+DfHIfVYNPQFafz7/\nj/A017VB24xItFOI0rC0tblXcQONeBMv3cau3A5owQKBgQD+6tkdCXoqreGIKcRb\nxiZ+hDTtbGluaakw+ygs8j57L4U6BUCcC9/i3604Hjqd2WxrKNzzn71/uHyyEhqH\nAg16dQ5Yl2hSBP2N6s1LbG2dYU16COgqh4vcd/tCfJMe1Wgjt5Ppe+o0gO9ifEni\nC9E/gD42H93RxkNZt4SRRoB1+wKBgQD0C1DhM/zTHGY1DWaFek794hWdjYG4w1iM\nvC7Of0A/vHVLlSqKeEHoxSJkzTChCJYmhoxIgJw51fuwekAUUma1MIvHeuHX1OD/\nxJrvFS+liOjWBm60h02UqggdC2CtHPGa9lYm8hP1ILXwfUSz4FBR0RkPTNn5U7Ic\n7/2Xz8yRlwKBgQDx6glUpxPKwOzQ/WIc/fS2B9z6m/GKGLe5hf/gd5uX58b1AtsH\nu7UiZsbKBNX3ysg7AbJ9eNCrDnc3vjpyeR41YjTVGgqkG5xMO9HLjACSZC7UavN4\nuN2fwjUuKW6syjVj/+lcoH3oiZujyPOMk05mhtuDHcayNwbfc2tZOqDaVQKBgAfE\njHB+nR+DGeW6ZXb+K6F9Hr8DEAv3e8wO+VZtSng84WbkepQpu79S9wNKXK/jfBQB\n2Fk+brqQixBU89Exxj8iKnDRAntCNV8uvNe7Tubv8qlNTxzD6b4/oz55bDxWXYJX\nMOrQbb4xqljbQ+KN00CnbSrFgXKkLVkqcmHwpUxFAoGANem1fw58MTgWtW/lxwk2\nfoFhN2SW13ubTFypeYYxiBP/GQnFnZ6CApnaA7NnY0V+eIusnJ2eo3G22Zs2QWVx\nhejGeP9QO8TCOfoim6CY3kvtehB1aKoKcYtwtEAOA7sELOdeR/mkOpZcQjAzSX9Z\n6qXan0SHDMsZbWiQ1aysGUI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-ajdbel@eleptra-rgxqtr.iam.gserviceaccount.com",
+  "client_id": "114094548946143214810",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-ajdbel%40eleptra-rgxqtr.iam.gserviceaccount.com"
+}
