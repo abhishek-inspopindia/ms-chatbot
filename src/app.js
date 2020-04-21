@@ -4,7 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 // A unique identifier for the given session
 const sessionId = uuid.v4();
@@ -57,7 +57,7 @@ async function communicateDialogFlow(msg, projectId = 'eleptra-rgxqtr') {
   // Create a new session
   const sessionClient = new dialogflow.SessionsClient({
     keyFilename: './config/dialogflow/Eleptra-b07e039c0c7d.json'
-  });
+  })
   const sessionPath = sessionClient.sessionPath(projectId, sessionId);
 
   // The text query request.
