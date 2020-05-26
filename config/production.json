@@ -1,0 +1,12 @@
+{
+    "app": {
+        "port": 80,
+        "secret": "x!A%C*F-JaNdRgUkXp2s5v8y/B?E(G+KbPeShVmYq3t6w9z$C&F)J@NcQfTjWnZr4u7x!A%D*G-KaPdSgUkXp2s5v8y/B?E(H+MbQeThWmYq3t6w9z$C&F)J@NcRfUjX"
+    },
+    "dialogflow": {
+        "project": {
+            "id": "faq-veousl",
+            "key": "./config/dialogflow/faq-veousl-c255b12312ab.json"
+        }
+    }
+}

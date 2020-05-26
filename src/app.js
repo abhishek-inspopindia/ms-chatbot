@@ -2,9 +2,10 @@ const dialogflow = require('dialogflow');
 const uuid = require('uuid');
 const express = require('express');
 const bodyParser = require('body-parser');
+const config = require('config');
 
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || config.get('app.port');
 
 // A unique identifier for the given session
 const sessionId = uuid.v4();
@@ -53,10 +54,10 @@ app.post('/query-bot', (req, res) => {
  * Send a query to the dialogflow agent, and return the query result.
  * @param {string} projectId The project to be used
 **/
-async function communicateDialogFlow(msg, projectId = 'eleptra-rgxqtr') {  
+async function communicateDialogFlow(msg, projectId = config.get('dialogflow.project.id')) {  
   // Create a new session
   const sessionClient = new dialogflow.SessionsClient({
-    keyFilename: './config/dialogflow/Eleptra-b07e039c0c7d.json'
+    keyFilename: config.get('dialogflow.project.key')
   })
   const sessionPath = sessionClient.sessionPath(projectId, sessionId);
 
@@ -76,9 +77,11 @@ async function communicateDialogFlow(msg, projectId = 'eleptra-rgxqtr') {
   // Send request and log result
   const responses = await sessionClient.detectIntent(request);
   console.log('Detected intent');
-  const result = responses[0].queryResult;
-  console.log(`Query: ${result.queryText}`);
-  console.log(`Response: ${result.fulfillmentText}`);
+  
+  const result = responses[0];
+  //const result = responses[0].queryResult;
+  //console.log(`Query: ${result.queryText}`);
+  //console.log(`Response: ${result.fulfillmentText}`);
   
   if (result.intent) {
     console.log(`Intent: ${result.intent.displayName}`);
@@ -86,7 +89,7 @@ async function communicateDialogFlow(msg, projectId = 'eleptra-rgxqtr') {
     console.log(`No intent matched.`);
   }
 
-  return result.fulfillmentText;
+  return result;
 }
 
 // Starting the server
