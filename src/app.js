@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
 });
 
 app.all('/snapengage', (req, res) => {
-  console.log(`Body: ${JSON.stringify(req)}`);
+  console.dir(`Body: ${req.body}`);
   // Check for header authorization token
   if (req.header('authorization') !== 'Awdz@2005##') {
     respondToSnapEngage(req, res, 'You are not authorized to chat with me, goodbye!', 'BYE', '');
