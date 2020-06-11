@@ -10,11 +10,9 @@ const port = process.env.PORT || config.get('app.port');
 // A unique identifier for the given session
 const sessionId = uuid.v4();
 
-app.use(
-  bodyParser.urlencoded({
-    extended: false
-  })
-);
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(bodyParser.raw());
 
 // Enabling CORS
 app.use(function (req, res, next) {
