@@ -225,8 +225,8 @@ function respondToSnapEngage(req, res, text, command, commandParams, buttons) {
   response.content = content;
 
   console.log(response);
-
-  res.status(200).send(JSON.stringify(response));
+  res.status(200).send(response);
+  //res.status(200).send(JSON.stringify(response));
 }
 
 function convertDFtoSE(req, res, data) {
