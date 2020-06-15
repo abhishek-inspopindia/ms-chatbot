@@ -274,7 +274,7 @@ function convertDFtoSE(req, res, data) {
     let seCommand = ``;
     let seCommandParams = ``;
     let seButtons = ``;
-    if (dfFulfillmentText === "") {
+    if (dfFulfillmentText === "" || dfFulfillmentText.indexOf('live agent') !== -1) {
       // Transfer to Live Agent
       dfFulfillmentText = `Connecting you to a Live Agent to assist you on this.`
       seText = dfFulfillmentText;
