@@ -78,7 +78,7 @@ app.all('/snapengage', (req, res) => {
       seText = `Glad to help you here. As requested ending this conversation here.`;
       seCommand = `BYE`;
       respondToSnapEngage(req, res, seText, seCommand);
-    } else if (message.indexOf(`I don't need Help`) !== -1) {
+    } else if (message.indexOf(`i don't need help`) !== -1) {
       seText = `No worries. I'm here if you need any help.`;
       seCommand = `BYE`;
       respondToSnapEngage(req, res, seText, seCommand);
